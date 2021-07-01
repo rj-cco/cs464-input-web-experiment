@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+#task {
+    color: darkred;
+}
+
+input {
+    font-size: 1em;
+    width: 45%;
+    border: 3px solid lightblue;
+    border-radius: 3px;
+}
+
+#butt0, #butt1, #butt2, #butt3, #butt4, #butt5, #butt6, #butt7, #butt8, #butt9 {
+    font-size: 1em;
+    margin-left: 25px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#butt_kbt_0, #butt_kbt_1, #butt_kbt_2, #butt_kbt_3, #butt_kbt_4, #butt_kbt_5, #butt_kbt_6, #butt_kbt_7, #butt_kbt_8, #butt_kbt_9 {
+    font-size: 1em;
+    margin-left: 25px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#start, #start_kbt {
+    font-size: 28px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+#stop, #stop_kbt {
+    font-size: 28px;
+    cursor: pointer;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.button {
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(228, 228, 235);
+    text-align: center;
+    font-size: 24px;
+    padding: 18px 24px;
+    width: 17%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
